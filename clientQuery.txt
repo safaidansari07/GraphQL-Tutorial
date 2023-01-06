@@ -1,0 +1,65 @@
+# Write your query or mutation here
+# query getQuotes{
+#      quotes{
+#       by,
+#       name
+#     }
+# }
+
+#  query getSingleQuote{
+  
+#   iquote(by:"1"){
+#        name
+#        by
+#     }
+  
+# }
+
+
+#  query getSingleQuote($quoteBy:ID!){
+  
+#   iquote(by:$quoteBy){
+#        name
+#        by
+#     }
+  
+# }
+
+
+#  query getSingleUser($userId:ID!){
+  
+#   user(id:$userId){
+#     firstName , 
+#     lastName , 
+#     email,
+#     quotes{
+#        name
+#     }
+#   }
+# }
+
+#  query getSingleUser{
+  
+#   user(id:"1"){
+#     firstName , 
+#     lastName , 
+#     email,
+#     quotes{
+#        name
+#     }
+#   }
+# }
+
+
+# query getUsers{
+#   users{
+#     id, 
+#     firstName,
+#     lastName, 
+#     email,
+#     quotes{
+#      name , 
+#      by 
+#     }
+#   }
+# }
